@@ -5,6 +5,7 @@
 - [Document](#document)
 - [Document download](#document-download)
 - [Images](#images)
+- [Organization users](#organization-users)
 
 
 **Search**
@@ -154,6 +155,133 @@
   ]
 }
 ```
+
+
+
+
+
+**Organization users**
+----
+  Returns json data for users of organization.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiorganization.building_users`
+    - `building_id=[integer]`
+    
+   **Optional:**
+   
+    - `sort=[string]`
+    - `results[integer]`
+    - `startIndex[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+{
+  "ResultSet": {
+    "totalResultsAvailable": 2,
+    "totalRecords": 2,
+    "recordsReturned": 2,
+    "pageSize": 10,
+    "startIndex": 0,
+    "sortKey": "name",
+    "sortDir": "asc",
+    "Result": [
+      {
+        "id": 183,
+        "organization_number": "",
+        "name": "Austb\u00f8 Skole",
+        "shortname": "Austb\u00f8",
+        "homepage": "",
+        "phone": "51856332",
+        "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
+        "description": "<br>Austb\u00f8 Skole",
+        "street": "Austb\u00f8svingene 50",
+        "zip_code": "4085",
+        "district": "Hundv\u00e5g",
+        "city": "Hundv\u00e5g",
+        "active": 1,
+        "show_in_portal": 0,
+        "activity_id": 97,
+        "customer_identifier_type": "",
+        "customer_number": "",
+        "customer_ssn": "",
+        "customer_organization_number": "",
+        "customer_internal": 1,
+        "activity_name": "Skole",
+        "contacts": [
+          {
+            "name": "\u00c5smund Glende Jakobsen",
+            "ssn": "",
+            "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
+            "phone": "51856332"
+          },
+          {
+            "name": "Eva Walde Lund",
+            "ssn": "",
+            "email": "eva.walde.lund@stavanger.kommune.no",
+            "phone": "51856335"
+          }
+        ],
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+      },
+      {
+        "id": 178,
+        "organization_number": "",
+        "name": "Renhold",
+        "shortname": "Renhold",
+        "homepage": "",
+        "phone": "",
+        "email": "",
+        "description": "",
+        "street": "",
+        "zip_code": "",
+        "district": "",
+        "city": "",
+        "active": 1,
+        "show_in_portal": 0,
+        "activity_id": 57,
+        "customer_identifier_type": "",
+        "customer_number": "",
+        "customer_ssn": "",
+        "customer_organization_number": "",
+        "customer_internal": 1,
+        "activity_name": "x Annet",
+        "contacts": [
+          {
+            "name": "",
+            "ssn": "",
+            "email": "",
+            "phone": ""
+          },
+          {
+            "name": "",
+            "ssn": "",
+            "email": "",
+            "phone": ""
+          }
+        ],
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+      }
+    ],
+    "actions": null
+  }
+}
+
+```
+
 
 
 
