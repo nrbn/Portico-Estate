@@ -25,10 +25,9 @@
    
     - `menuaction=bookingfrontend.uisearch.query`
     - `searchterm=[string]`
+    
+   **Optional:**
    
-
-* **Data Params**
-
     - `filter_search_type=[string]`
     - `filter_part_of_town=[integer]`
     - `filter_top_level=[integer]`
@@ -119,8 +118,8 @@
     - `menuaction=bookingfrontend.uiresource.index_json`
     
    
-* **Data Params**
-
+   **Optional:**
+   
     - `filter_building_id=[integer]`
     - `phpgw_return_as=[string]`
 
@@ -182,9 +181,8 @@
    
     - `menuaction=bookingfrontend.uidocument_building.index`
     
+   **Optional:**
    
-* **Data Params**
-
     - `sort=[string]`
     - `no_images[integer]`
     - `filter_owner_id[integer]`
@@ -247,8 +245,8 @@
     - `menuaction=bookingfrontend.uidocument_building.download`
     - `id=[integer]`
     
-   
-* **Data Params**
+    
+    **Optional:**
 
     - `filter_owner_id[integer]`
     - `phpgw_return_as=[string]`
@@ -286,9 +284,8 @@
     - `menuaction=bookingfrontend.uidocument_building.download`
     - `id=[integer]`
     
+   **Optional:**
    
-* **Data Params**
-
     - `filter_owner_id[integer]`
     - `phpgw_return_as=[string]`
 
