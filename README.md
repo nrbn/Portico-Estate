@@ -1,8 +1,6 @@
 ## Welcome to Portico Estate API Documentation
 
-You can use the [editor on GitHub](https://github.com/nrbn/Portico-Estate/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Portico Estate is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
 
 ### Markdown
 
