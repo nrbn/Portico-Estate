@@ -15,9 +15,10 @@
 *  **URL Params**
 
    **Required:**
- 
-   `menuaction=bookingfrontend.uisearch.query`
-   `searchterm=[string]`
+   
+    - `menuaction=bookingfrontend.uisearch.query`
+    - `searchterm=[string]`
+   
 
 * **Data Params**
 
@@ -29,7 +30,8 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `
+    **Content:** 
+`
  {
   "results": {
     "total_records": [
@@ -98,25 +100,3 @@
       }
     });
   ```
-  
-  
-
-### Get all resource
-
-Required paramaters for search is menuaction, and searchterm. Searchterm is the value of search data. So the url will look like this `(searchterm=åmøy%20idrettspark)`:
-
-```
-
-http://.../PorticoEstate/bookingfrontend/?searchterm=åmøy%20idrettspark&menuaction=bookingfrontend.uisearch.query&phpgw_return_as=json
-
-```
-And the respons will be:
-
-```
-
-```
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
