@@ -31,7 +31,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** <br />
+    **Content:**
 ```
  {
   "results": {
