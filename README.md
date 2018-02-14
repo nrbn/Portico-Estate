@@ -158,3 +158,68 @@
   ]
 }
 ```
+
+
+
+**Document**
+----
+  Returns json data for documents.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidocument_building.index`
+    
+   
+* **Data Params**
+
+    - `sort=[string]`
+    - `no_images[integer]`
+    - `filter_owner_id[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:**
+```
+ {
+  "start": 0,
+  "sort": "name",
+  "dir": "asc",
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "id": 361,
+      "name": "Prisliste for kommunale idrettsanlegg.pdf",
+      "owner_id": 27,
+      "category": "Prisliste",
+      "description": "Prisliste for kommunale idrettsanlegg",
+      "owner_name": "Hafrsfjord skole fotballbane",
+      "is_image": false,
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=361&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=02762vmfbb2515tankllctl9p7&amp;click_history=d99201659f2f2a88ec20dff936e133fb"
+    },
+    {
+      "id": 360,
+      "name": "Reglement for bruk av kommunale idrettsanlegg.pdf",
+      "owner_id": 27,
+      "category": "Reglement",
+      "description": "Reglement for bruk av kommunale idrettsanlegg",
+      "owner_name": "Hafrsfjord skole fotballbane",
+      "is_image": false,
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=360&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=02762vmfbb2515tankllctl9p7&amp;click_history=d99201659f2f2a88ec20dff936e133fb"
+    }
+  ]
+}
+```
