@@ -2,7 +2,7 @@
 
 - [Search](#search)
 - [Resource](#resource)
-
+- [Document](#document)
 
 **Search**
 ----
