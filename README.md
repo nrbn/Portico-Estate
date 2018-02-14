@@ -1,6 +1,6 @@
 ## Welcome to Portico Estate API Documentation
 
-Portico Estate is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
+Portico Estate application is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
 
 ### Markdown
 
@@ -24,6 +24,12 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+Search Request
+```markdown
+
+https://../bookingfrontend/?menuaction=bookingfrontend.uisearch.query&building_id=null&filter_search_type=resource&filter_part_of_town=7&filter_top_level=97&phpgw_return_as=stripped_html&searchterm=%C3%A5m%C3%B8y
+
+```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
