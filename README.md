@@ -24,7 +24,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-[a relative link](home-page.md)
+[a relative link](home.md)
 
 Search Request
 ```markdown
