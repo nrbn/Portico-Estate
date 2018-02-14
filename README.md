@@ -31,8 +31,8 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-`
+    **Content:** <br />
+```
  {
   "results": {
     "total_records": [
@@ -87,4 +87,5 @@
     ],
     "total_records_sum": 1
   }
-}`
+}
+```
