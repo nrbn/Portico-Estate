@@ -2,11 +2,24 @@
 
 Portico Estate application is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
 
-[a relative link](#markdown)
+[Bookingfrontend](#bookingfrontend)
+[Search](#search)
 
-### Markdown
+# Bookingfrontend
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+All front-end content are under the bookingfrontend path and the parameter menuaction will call the method for the page user visits and gets right data.
+
+### Search
+
+Main required paramaters for search is menuaction, and searchterm. Searchterm is the value of search data. So the url will look like this:
+
+```markdown
+
+https://../bookingfrontend/?menuaction=bookingfrontend.uisearch.query&building_id=null&filter_search_type=resource&filter_part_of_town=7&filter_top_level=97&phpgw_return_as=stripped_html&searchterm=%C3%A5m%C3%B8y
+
+```
+
+
 
 ```markdown
 Syntax highlighted code block
@@ -31,11 +44,7 @@ Syntax highlighted code block
 
 
 Search Request
-```markdown
 
-https://../bookingfrontend/?menuaction=bookingfrontend.uisearch.query&building_id=null&filter_search_type=resource&filter_part_of_town=7&filter_top_level=97&phpgw_return_as=stripped_html&searchterm=%C3%A5m%C3%B8y
-
-```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
