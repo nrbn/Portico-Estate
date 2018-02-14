@@ -3,6 +3,9 @@
 - [Search](#search)
 - [Resource](#resource)
 - [Document](#document)
+- [Document download](#document-download)
+- [Images](#images)
+
 
 **Search**
 ----
@@ -72,9 +75,9 @@
         "active": 1,
         "activity_name": "Idrett",
         "type": "building",
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=18&amp;domain=default&amp;bookingfrontendsession=naoei7vir38k4g39rtsb662q81&amp;click_history=f93f70f6b76473b22343453d2f911119",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=18&amp;domain=default&amp;bookingfrontendsession=&amp;click_history=",
         "img_container": "building-18",
-        "img_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.index_images&amp;filter_owner_id=18&amp;phpgw_return_as=json&amp;results=1&amp;domain=default&amp;bookingfrontendsession=naoei7vir38k4g39rtsb662q81&amp;click_history=f93f70f6b76473b22343453d2f911119"
+        "img_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.index_images&amp;filter_owner_id=18&amp;phpgw_return_as=json&amp;results=1&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
       }
     ],
     "start": [
@@ -148,7 +151,7 @@
       "buildings": [
         27
       ],
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiresource.show&amp;id=37&amp;domain=default&amp;bookingfrontendsession=v8rkaqgnopln438m5lm0dvqhj7&amp;click_history=fbb79046d66bd4bd29a9f9d39ae32662",
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiresource.show&amp;id=37&amp;domain=default&amp;bookingfrontendsession=&amp;click_history=",
       "building_street": "Madlasandnes",
       "building_city": "4045",
       "building_district": "Madla",
@@ -208,7 +211,7 @@
       "description": "Prisliste for kommunale idrettsanlegg",
       "owner_name": "Hafrsfjord skole fotballbane",
       "is_image": false,
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=361&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=02762vmfbb2515tankllctl9p7&amp;click_history=d99201659f2f2a88ec20dff936e133fb"
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=361&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
     },
     {
       "id": 360,
@@ -218,8 +221,84 @@
       "description": "Reglement for bruk av kommunale idrettsanlegg",
       "owner_name": "Hafrsfjord skole fotballbane",
       "is_image": false,
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=360&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=02762vmfbb2515tankllctl9p7&amp;click_history=d99201659f2f2a88ec20dff936e133fb"
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=360&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
     }
   ]
+}
+```
+
+
+**Document download** ERROR
+----
+  Returns json data for documents download.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidocument_building.download`
+    - `id=[integer]`
+    
+   
+* **Data Params**
+
+    - `filter_owner_id[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:**
+```
+{
+ 
+}
+```
+
+
+
+
+**Images**
+----
+  Returns json data for building images.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidocument_building.download`
+    - `id=[integer]`
+    
+   
+* **Data Params**
+
+    - `filter_owner_id[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:**
+```
+{
+ 
 }
 ```
