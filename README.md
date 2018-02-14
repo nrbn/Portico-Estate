@@ -1,7 +1,7 @@
 ## Portico Estate API Documentation
 
 - [Search](#search)
-- [Get all resource](#get-all-resource)
+- [Resource](#resource)
 
 
 **Search**
