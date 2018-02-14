@@ -1,28 +1,36 @@
-## Welcome to Portico Estate API Documentation
+## Portico Estate API Documentation
 
-Portico Estate application is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
+**Search**
+----
+  Returns json data for search.
 
-- [Bookingfrontend](#bookingfrontend)
-- [Search](#search)
+* **URL**
 
+  /bookingfrontend/
 
-# Bookingfrontend
+* **Method:**
 
-All front-end content are under the bookingfrontend path and the parameter menuaction will call method for the page user visits.
+  `GET`
+  
+*  **URL Params**
 
-### Search
+   **Required:**
+ 
+   `menuaction=bookingfrontend.uisearch.query`
+   `searchterm=[string]`
 
-Main required paramaters for search is menuaction, and searchterm. Searchterm is the value of search data. So the url will look like this `(searchterm=åmøy%20idrettspark)`:
+* **Data Params**
 
-```
+  `filter_search_type=[string]`
+  `filter_part_of_town=[integer]`
+  `filter_top_level=[integer]`
+  `phpgw_return_as=[string]`
 
-http://.../PorticoEstate/bookingfrontend/?searchterm=åmøy%20idrettspark&menuaction=bookingfrontend.uisearch.query&phpgw_return_as=json
+* **Success Response:**
 
-```
-And the respons will be:
-
-```
-{
+  * **Code:** 200 <br />
+    **Content:** `
+ {
   "results": {
     "total_records": [
       1,
@@ -76,29 +84,39 @@ And the respons will be:
     ],
     "total_records_sum": 1
   }
-}
+}`
+
+* **Sample Call:**
+
+  ```javascript
+    $.ajax({
+      url: "/users/1",
+      dataType: "json",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+  ```
+  
+  
+
+### Get all resource
+
+Required paramaters for search is menuaction, and searchterm. Searchterm is the value of search data. So the url will look like this `(searchterm=åmøy%20idrettspark)`:
+
 ```
 
+http://.../PorticoEstate/bookingfrontend/?searchterm=åmøy%20idrettspark&menuaction=bookingfrontend.uisearch.query&phpgw_return_as=json
 
+```
+And the respons will be:
 
+```
+
+```
 
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
-
-
-[a relative link](home.md)
-
-
-Search Request
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nrbn/Portico-Estate/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
