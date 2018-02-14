@@ -6,7 +6,7 @@
 
 * **URL**
 
-  /bookingfrontend/
+  /bookingfrontend/?
 
 * **Method:**
 
@@ -22,10 +22,11 @@
 
 * **Data Params**
 
-  `filter_search_type=[string]`
-  `filter_part_of_town=[integer]`
-  `filter_top_level=[integer]`
-  `phpgw_return_as=[string]`
+    - `filter_search_type=[string]`
+    - `filter_part_of_town=[integer]`
+    - `filter_top_level=[integer]`
+    - `phpgw_return_as=[string]`
+
 
 * **Success Response:**
 
@@ -87,16 +88,3 @@
     "total_records_sum": 1
   }
 }`
-
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
