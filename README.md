@@ -34,10 +34,7 @@
     - `phpgw_return_as=[string]`
 
 
-* **Success Response:**
-
-  * **Code:** 200 <br />
-    **Content:**
+* **Response:**
 ```
  {
   "results": {
@@ -124,10 +121,7 @@
     - `phpgw_return_as=[string]`
 
 
-* **Success Response:**
-
-  * **Code:** 200 <br />
-    **Content:**
+* **Response:**
 ```
  {
   "total_records": 1,
@@ -189,10 +183,7 @@
     - `phpgw_return_as=[string]`
 
 
-* **Success Response:**
-
-  * **Code:** 200 <br />
-    **Content:**
+* **Response:**
 ```
  {
   "start": 0,
@@ -226,7 +217,7 @@
 ```
 
 
-**Document download** ERROR
+**Document download**
 ----
   Returns json data for documents download.
 
@@ -252,10 +243,8 @@
     - `phpgw_return_as=[string]`
 
 
-* **Success Response:**
+* **Response:**
 
-  * **Code:** 200 <br />
-    **Content:**
 ```
 {
  
@@ -267,7 +256,7 @@
 
 **Images**
 ----
-  Returns json data for building images.
+  Returns json data for a building images.
 
 * **URL**
 
@@ -281,21 +270,49 @@
 
    **Required:**
    
-    - `menuaction=bookingfrontend.uidocument_building.download`
-    - `id=[integer]`
+    - `menuaction=bookingfrontend.uidocument_building.index_images`
     
    **Optional:**
    
-    - `filter_owner_id[integer]`
+    - `sort[string]`
+    - `filter_owner_id[integer]`  
     - `phpgw_return_as=[string]`
 
 
-* **Success Response:**
-
-  * **Code:** 200 <br />
-    **Content:**
+* **Response:**
 ```
 {
- 
+  "ResultSet": {
+    "totalResultsAvailable": 2,
+    "totalRecords": 2,
+    "recordsReturned": 2,
+    "pageSize": 10,
+    "startIndex": null,
+    "sortKey": null,
+    "sortDir": null,
+    "Result": [
+      {
+        "id": 41,
+        "name": "Fotballbaner 191.JPG",
+        "owner_id": 27,
+        "category": "picture",
+        "description": "Hafrsfjord skole grusbane",
+        "owner_name": "Hafrsfjord skole fotballbane",
+        "is_image": true,
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=41&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=ksmbnfpqpfpfji794uun4cd994&amp;click_history=ade6d4550f0ca66c486404d0d6d1068e"
+      },
+      {
+        "id": 95,
+        "name": "oversikt hafrs 2013.jpg",
+        "owner_id": 27,
+        "category": "picture",
+        "description": "Oversikt over Hafrsfjord skole grusbane",
+        "owner_name": "Hafrsfjord skole fotballbane",
+        "is_image": true,
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=95&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=ksmbnfpqpfpfji794uun4cd994&amp;click_history=ade6d4550f0ca66c486404d0d6d1068e"
+      }
+    ],
+    "actions": null
+  }
 }
 ```
