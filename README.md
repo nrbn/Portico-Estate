@@ -2,11 +2,12 @@
 
 - [Search](#search)
 - [Resource](#resource)
+- [Resource images](#resource-images)
+- [Resource images(2)](#resource-images-2)
 - [Document](#document)
 - [Document download](#document-download)
-- [Images](#images)
+- [Building images](#images)
 - [Organization users](#organization-users)
-
 
 **Search**
 ----
@@ -155,6 +156,118 @@
   ]
 }
 ```
+
+
+
+
+**Resource images**
+----
+  Returns json data for resource images.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidocument_resource.index`
+    
+   
+   **Optional:**
+   
+    - `filter_owner_id=[integer]`
+    - `no_images=[integer]`
+    - `sort=[string]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+ {
+  "start": 0,
+  "sort": "name",
+  "dir": "asc",
+  "recordsTotal": 1,
+  "recordsFiltered": 1,
+  "data": [
+    {
+      "id": 164,
+      "name": "Hall A.jpeg",
+      "owner_id": 89,
+      "category": "Bilde",
+      "description": "Hall A",
+      "owner_name": "Hall A",
+      "is_image": true,
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_resource.download&amp;id=164&amp;filter_owner_id=89&amp;"
+    }
+  ]
+}
+```
+
+
+
+
+
+**Resource images 2**
+----
+  Returns json data for resource images.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidocument_resource.index_images`
+    
+   
+   **Optional:**
+   
+    - `filter_owner_id=[integer]`
+    - `sort=[string]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+{
+  "ResultSet": {
+    "totalResultsAvailable": 1,
+    "totalRecords": 1,
+    "recordsReturned": 1,
+    "pageSize": 10,
+    "startIndex": null,
+    "sortKey": null,
+    "sortDir": null,
+    "Result": [
+      {
+        "id": 164,
+        "name": "Hall A.jpeg",
+        "owner_id": 89,
+        "category": "picture",
+        "description": "Hall A",
+        "owner_name": "Hall A",
+        "is_image": true,
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_resource.download&amp;id=164&amp;filter_owner_id=89&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=3f5b4edbccf7598624e3bfae7fcdbcf6"
+      }
+    ],
+    "actions": null
+  }
+}
+```
+
 
 
 
