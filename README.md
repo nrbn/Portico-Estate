@@ -9,6 +9,7 @@
 - [Resource](#resource)
 - [Resource images](#resource-images)
 - [Resource images(2)](#resource-images-2)
+- [Resource schedule](#resource-schedule)
 - [Organization](#organization)
 - [Organization delegate](#organization-delegate)
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
@@ -663,6 +664,144 @@
 
 
 
+
+
+**Resource schedule**
+----
+  Returns json data for resource schedule.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiresource.schedule`
+    - `id=[integer]`
+   
+   **Optional:**
+   
+    - `date=[date]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+{
+  "ResultSet": {
+    "totalResultsAvailable": 6,
+    "Result": [
+      {
+        "time": "00:00-08:30",
+        "_from": "00:00",
+        "_to": "08:30",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibooking.show&amp;"
+      },
+      {
+        "resource": "Hall A",
+        "resource_id": 89,
+        "time": "08:30-09:25",
+        "_from": "08:30",
+        "_to": "09:25",
+        "Wed": {
+          "id": 266481,
+          "id_string": "266481",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hundv\u00e5ghallen",
+          "season_id": 396,
+          "from_": "08:30",
+          "to_": "09:25",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "4",
+          "season_name": "Inne 2017\/2018 dag",
+          "resources": [
+            89
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-02-14",
+          "wday": "Wed",
+          "info_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiallocation.info&amp;id=266481&amp;"
+        },
+        "Thu": {
+          "id": 266487,
+          "id_string": "266487",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 184,
+          "building_name": "Hundv\u00e5ghallen",
+          "season_id": 396,
+          "from_": "08:30",
+          "to_": "09:25",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hundv\u00e5g skole",
+          "organization_shortname": "Hundv\u00e5g",
+          "building_id": "4",
+          "season_name": "Inne 2017\/2018 dag",
+          "resources": [
+            89
+          ],
+          "costs": "",
+          "name": "Hundv\u00e5g skole",
+          "shortname": "Hundv\u00e5g",
+          "type": "allocation",
+          "date": "2018-02-15",
+          "wday": "Thu",
+          "info_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiallocation.info&amp;id=266487&amp;"
+        },
+        "Mon": {
+          "id": 266473,
+          "id_string": "266473",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hundv\u00e5ghallen",
+          "season_id": 396,
+          "from_": "13:10",
+          "to_": "16:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "4",
+          "season_name": "Inne 2017\/2018 dag",
+          "resources": [
+            89
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-02-12",
+          "wday": "Mon",
+          "info_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiallocation.info&amp;id=266473&amp;"
+        },
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibooking.show&amp;"
+      },
+      {
+        "time": "16:00-00:00",
+        "_from": "16:00",
+        "_to": "00:00",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibooking.show&amp;"
+      }
+    ]
+  }
+}
+```
 
 
 
