@@ -9,7 +9,8 @@
 - [Building images](#images)
 - [Organization](#organization)
 - [Organization users](#organization-users)
-- [Delegate](#delegate)
+- [Organization delegate](#organization-delegate)
+- [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
 
 **Search**
 ----
@@ -668,7 +669,7 @@
 
 
 
-**Delegate**
+**organization delegate**
 ----
   Returns json data for delegate.
 
