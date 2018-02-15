@@ -7,7 +7,9 @@
 - [Document](#document)
 - [Document download](#document-download)
 - [Building images](#images)
+- [Organization](#organization)
 - [Organization users](#organization-users)
+- [Delegate](#delegate)
 
 **Search**
 ----
@@ -271,133 +273,6 @@
 
 
 
-
-
-**Organization users**
-----
-  Returns json data for users of organization.
-
-* **URL**
-
-  /bookingfrontend/?
-
-* **Method:**
-
-  `GET`
-  
-*  **URL Params**
-
-   **Required:**
-   
-    - `menuaction=bookingfrontend.uiorganization.building_users`
-    - `building_id=[integer]`
-    
-   **Optional:**
-   
-    - `sort=[string]`
-    - `results[integer]`
-    - `startIndex[integer]`
-    - `phpgw_return_as=[string]`
-
-
-* **Response:**
-```
-{
-  "ResultSet": {
-    "totalResultsAvailable": 2,
-    "totalRecords": 2,
-    "recordsReturned": 2,
-    "pageSize": 10,
-    "startIndex": 0,
-    "sortKey": "name",
-    "sortDir": "asc",
-    "Result": [
-      {
-        "id": 183,
-        "organization_number": "",
-        "name": "Austb\u00f8 Skole",
-        "shortname": "Austb\u00f8",
-        "homepage": "",
-        "phone": "51856332",
-        "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
-        "description": "<br>Austb\u00f8 Skole",
-        "street": "Austb\u00f8svingene 50",
-        "zip_code": "4085",
-        "district": "Hundv\u00e5g",
-        "city": "Hundv\u00e5g",
-        "active": 1,
-        "show_in_portal": 0,
-        "activity_id": 97,
-        "customer_identifier_type": "",
-        "customer_number": "",
-        "customer_ssn": "",
-        "customer_organization_number": "",
-        "customer_internal": 1,
-        "activity_name": "Skole",
-        "contacts": [
-          {
-            "name": "\u00c5smund Glende Jakobsen",
-            "ssn": "",
-            "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
-            "phone": "51856332"
-          },
-          {
-            "name": "Eva Walde Lund",
-            "ssn": "",
-            "email": "eva.walde.lund@stavanger.kommune.no",
-            "phone": "51856335"
-          }
-        ],
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
-      },
-      {
-        "id": 178,
-        "organization_number": "",
-        "name": "Renhold",
-        "shortname": "Renhold",
-        "homepage": "",
-        "phone": "",
-        "email": "",
-        "description": "",
-        "street": "",
-        "zip_code": "",
-        "district": "",
-        "city": "",
-        "active": 1,
-        "show_in_portal": 0,
-        "activity_id": 57,
-        "customer_identifier_type": "",
-        "customer_number": "",
-        "customer_ssn": "",
-        "customer_organization_number": "",
-        "customer_internal": 1,
-        "activity_name": "x Annet",
-        "contacts": [
-          {
-            "name": "",
-            "ssn": "",
-            "email": "",
-            "phone": ""
-          },
-          {
-            "name": "",
-            "ssn": "",
-            "email": "",
-            "phone": ""
-          }
-        ],
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
-      }
-    ],
-    "actions": null
-  }
-}
-
-```
-
-
-
-
 **Document**
 ----
   Returns json data for documents.
@@ -550,10 +425,277 @@
         "description": "Oversikt over Hafrsfjord skole grusbane",
         "owner_name": "Hafrsfjord skole fotballbane",
         "is_image": true,
-        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=95&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=ksmbnfpqpfpfji794uun4cd994&amp;click_history=ade6d4550f0ca66c486404d0d6d1068e"
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=95&amp;filter_owner_id=27"
       }
     ],
     "actions": null
   }
 }
+```
+
+
+
+
+
+
+**Organization**
+----
+  Returns json data for organization.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uigroup.index`
+    
+   **Optional:**
+   
+    - `sort=[string]`
+    - `filter_organization_id[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+{
+  "start": 0,
+  "sort": "name",
+  "dir": "asc",
+  "recordsTotal": 2,
+  "recordsFiltered": 2,
+  "data": [
+    {
+      "id": 154,
+      "active": 1,
+      "show_in_portal": 0,
+      "organization_id": 128,
+      "shortname": "SBS-BREDDE",
+      "description": "",
+      "name": "Bredde",
+      "activity_id": 49,
+      "activity_name": "Bueskyting",
+      "organization_name": "Stavanger bueskyttere",
+      "contacts": [
+        {
+          "name": "Helge salomonsen",
+          "email": "Helge.salomonsen@lyse.net",
+          "phone": "93420066"
+        },
+        {
+          "name": "Ole-Kristian olufsen",
+          "email": "Okolufsen@gmail.com",
+          "phone": "92802745"
+        }
+      ],
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=154&amp",
+      "primary_contact_name": "Helge salomonsen",
+      "primary_contact_phone": "93420066",
+      "primary_contact_email": "Helge.salomonsen@lyse.net",
+      "secondary_contact_name": "Ole-Kristian olufsen",
+      "secondary_contact_phone": "92802745",
+      "secondary_contact_email": "Okolufsen@gmail.com"
+    },
+    {
+      "id": 153,
+      "active": 1,
+      "show_in_portal": 0,
+      "organization_id": 128,
+      "shortname": "SBS-SATS",
+      "description": "",
+      "name": "Satsningsgruppe",
+      "activity_id": 49,
+      "activity_name": "Bueskyting",
+      "organization_name": "Stavanger bueskyttere",
+      "contacts": [
+        {
+          "name": "Ole-Kristian olufsen",
+          "email": "Okolufsen@gmail.com",
+          "phone": "92802745"
+        },
+        {
+          "name": "Ken Henry Tesaker",
+          "email": "Kenht@broadpark.no",
+          "phone": "90239221"
+        }
+      ],
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=153&amp",
+      "primary_contact_name": "Ole-Kristian olufsen",
+      "primary_contact_phone": "92802745",
+      "primary_contact_email": "Okolufsen@gmail.com",
+      "secondary_contact_name": "Ken Henry Tesaker",
+      "secondary_contact_phone": "90239221",
+      "secondary_contact_email": "Kenht@broadpark.no"
+    }
+  ]
+}
+```
+
+
+
+
+
+
+**Organization users**
+----
+  Returns json data for users of organization.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiorganization.building_users`
+    - `building_id=[integer]`
+    
+   **Optional:**
+   
+    - `sort=[string]`
+    - `results[integer]`
+    - `startIndex[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+{
+  "ResultSet": {
+    "totalResultsAvailable": 2,
+    "totalRecords": 2,
+    "recordsReturned": 2,
+    "pageSize": 10,
+    "startIndex": 0,
+    "sortKey": "name",
+    "sortDir": "asc",
+    "Result": [
+      {
+        "id": 183,
+        "organization_number": "",
+        "name": "Austb\u00f8 Skole",
+        "shortname": "Austb\u00f8",
+        "homepage": "",
+        "phone": "51856332",
+        "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
+        "description": "<br>Austb\u00f8 Skole",
+        "street": "Austb\u00f8svingene 50",
+        "zip_code": "4085",
+        "district": "Hundv\u00e5g",
+        "city": "Hundv\u00e5g",
+        "active": 1,
+        "show_in_portal": 0,
+        "activity_id": 97,
+        "customer_identifier_type": "",
+        "customer_number": "",
+        "customer_ssn": "",
+        "customer_organization_number": "",
+        "customer_internal": 1,
+        "activity_name": "Skole",
+        "contacts": [
+          {
+            "name": "\u00c5smund Glende Jakobsen",
+            "ssn": "",
+            "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
+            "phone": "51856332"
+          },
+          {
+            "name": "Eva Walde Lund",
+            "ssn": "",
+            "email": "eva.walde.lund@stavanger.kommune.no",
+            "phone": "51856335"
+          }
+        ],
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+      },
+      {
+        "id": 178,
+        "organization_number": "",
+        "name": "Renhold",
+        "shortname": "Renhold",
+        "homepage": "",
+        "phone": "",
+        "email": "",
+        "description": "",
+        "street": "",
+        "zip_code": "",
+        "district": "",
+        "city": "",
+        "active": 1,
+        "show_in_portal": 0,
+        "activity_id": 57,
+        "customer_identifier_type": "",
+        "customer_number": "",
+        "customer_ssn": "",
+        "customer_organization_number": "",
+        "customer_internal": 1,
+        "activity_name": "x Annet",
+        "contacts": [
+          {
+            "name": "",
+            "ssn": "",
+            "email": "",
+            "phone": ""
+          },
+          {
+            "name": "",
+            "ssn": "",
+            "email": "",
+            "phone": ""
+          }
+        ],
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+      }
+    ],
+    "actions": null
+  }
+}
+
+```
+
+
+
+
+**Delegate**
+----
+  Returns json data for delegate.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uidelegate.index`
+    
+   **Optional:**
+   
+    - `sort=[string]`
+    - `filter_organization_id[integer]`
+    - `filter_active[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+
+
 ```
