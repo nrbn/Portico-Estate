@@ -232,7 +232,7 @@
 
 ```
 {
-  ResultSet: {
+  "ResultSet": {
     "totalResultsAvailable": 2,
     "totalRecords": 2,
     "recordsReturned": 2,
@@ -942,11 +942,11 @@
 
 
 * **Response:**
-```
-
 
 ```
 
+
+```
 
 
 **Building & construction used by a organization**
@@ -975,8 +975,8 @@
 
 
 * **Response:**
-```
 
+```
 {
   "ResultSet": {
     "totalResultsAvailable": 2,
@@ -1083,6 +1083,7 @@
 
 
 * **Response:**
+
 ```
 
 
