@@ -17,7 +17,7 @@
 
 **Search**
 ---- 
-  Search for facilities or resources. Returns json data.
+  Search for facilities or resources.
 
 * **URL**
 
@@ -107,7 +107,7 @@
 
 **Building**
 ----
-  Returns json data of all buildings.
+  Get list of buildings.
 
 * **URL**
 
@@ -203,7 +203,7 @@
 
 **Building users**
 ----
-  Returns json data for users of building.
+  Get users of a building.
 
 * **URL**
 
@@ -329,7 +329,7 @@
 
 **Building documents**
 ----
-  Returns json data for documents.
+  Get documents for a building.
 
 * **URL**
 
@@ -389,7 +389,7 @@
 
 **Building document download**
 ----
-  Returns json data for documents download.
+  Get a document url for download
 
 * **URL**
 
@@ -428,7 +428,7 @@
 
 **Building images**
 ----
-  Returns json data for a building images.
+  Get images of a building.
 
 * **URL**
 
@@ -494,7 +494,7 @@
 
 **Resource**
 ----
-  Returns json data for resource.
+  Get list of resources and filter resources by a building.
 
 * **URL**
 
@@ -556,7 +556,7 @@
 
 **Resource images**
 ----
-  Returns json data for resource images.
+  Get resource images.
 
 * **URL**
 
@@ -610,7 +610,7 @@
 
 **Resource images 2**
 ----
-  Returns json data for resource images.
+  Get resource images alternative.
 
 * **URL**
 
@@ -669,7 +669,7 @@
 
 **Resource schedule**
 ----
-  Returns json data for resource schedule.
+  Get booked events of a resource
 
 * **URL**
 
@@ -808,7 +808,7 @@
 
 **Organization**
 ----
-  Returns json data for organization.
+  Get list of organization and filter by id
 
 * **URL**
 
@@ -917,7 +917,7 @@
 
 **Organization delegate**
 ----
-  Returns json data for delegate.
+  Get delegates of a organization.
 
 * **URL**
 
@@ -937,7 +937,7 @@
    
     - `sort=[string]`
     - `filter_organization_id[integer]`
-    - `filter_active[integer]`
+    - `filter_active[integer]`              (active delegates)
     - `phpgw_return_as=[string]`
 
 
@@ -951,7 +951,7 @@
 
 **Building & construction used by a organization**
 ----
-  Returns json data for building and construction used by a organization.
+  Get list of building and construction used by a organization.
 
 * **URL**
 
@@ -1058,7 +1058,7 @@
 
 **Organization documents**
 ----
-  Returns json data for organizations documents.
+  Get list of organization's documents.
 
 * **URL**
 
