@@ -218,13 +218,13 @@
    **Required:**
    
     - `menuaction=bookingfrontend.uiorganization.building_users`
-    - `building_id=[integer]`
+    - `building_id=[integer]`                 (building id)
     
    **Optional:**
    
-    - `sort=[string]`
-    - `results[integer]`
-    - `startIndex[integer]`
+    - `sort=[string]`                         (sort by eg. name)
+    - `results[integer]`                      (result limit)
+    - `startIndex[integer]`                   
     - `phpgw_return_as=[string]`
 
 
@@ -348,7 +348,7 @@
    **Optional:**
    
     - `sort=[string]`
-    - `no_images[integer]`
+    - `no_images[integer]`                (eg -1 or 1)
     - `filter_owner_id[integer]`
     - `phpgw_return_as=[string]`
 
