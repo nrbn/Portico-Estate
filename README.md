@@ -231,7 +231,7 @@
 * **Response:**
 ```
 {
-  "ResultSet": {
+  ResultSet: {
     "totalResultsAvailable": 2,
     "totalRecords": 2,
     "recordsReturned": 2,
