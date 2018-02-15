@@ -17,7 +17,7 @@
 
 **Search**
 ---- 
-  Returns json data for search.
+  Search for facilities or resources. Returns json data.
 
 * **URL**
 
@@ -36,10 +36,10 @@
     
    **Optional:**
    
-    - `filter_search_type=[string]`
-    - `filter_part_of_town=[integer]`
-    - `filter_top_level=[integer]`
-    - `phpgw_return_as=[string]`
+    - `filter_search_type=[string]`         (filter by building or resource)
+    - `filter_part_of_town=[integer]`       (filter by town id)
+    - `filter_top_level=[integer]`          (filter by categories/department. eg. sports(2) or school(97))
+    - `phpgw_return_as=[string]`            (return value type eg. json or stripped_html)
 
 
 * **Response:**
@@ -107,7 +107,7 @@
 
 **Building**
 ----
-  Returns json data for all buildings.
+  Returns json data of all buildings.
 
 * **URL**
 
