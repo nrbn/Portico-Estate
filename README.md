@@ -2,7 +2,7 @@
 
 - [Search](#search)
 - [Building](#building)
-- [Building users](#building users)
+- [Building users](#building users
 - [Building documents](#document)
 - [Building document download](#document-download)
 - [Building images](#images)
@@ -15,7 +15,7 @@
 - [Organization documents](#organization-documents)
 
 **Search**
-----
+---- 
   Returns json data for search.
 
 * **URL**
