@@ -78,9 +78,9 @@
         "active": 1,
         "activity_name": "Idrett",
         "type": "building",
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=18&amp;domain=default&amp;bookingfrontendsession=&amp;click_history=",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=18&amp;",
         "img_container": "building-18",
-        "img_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.index_images&amp;filter_owner_id=18&amp;phpgw_return_as=json&amp;results=1&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
+        "img_url": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.index_images&amp;filter_owner_id=18&amp;phpgw_return_as=json&amp;results=1&amp;"
       }
     ],
     "start": [
@@ -163,7 +163,7 @@
       "city": "Stavanger",
       "active": 1,
       "activity_name": "Idrett",
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=7&amp;domain=default&amp;bookingfrontendsession=7ld1c9cteo772ot6mih6koa8l0&amp;click_history=ef949597aaef4301c532800b73509ac7"
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=7&amp;"
     },
     {
       "id": 33,
@@ -192,7 +192,7 @@
       "city": "Stavanger",
       "active": 1,
       "activity_name": "Idrett",
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=33&amp;domain=default&amp;bookingfrontendsession=7ld1c9cteo772ot6mih6koa8l0&amp;click_history=ef949597aaef4301c532800b73509ac7"
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=33&amp;"
     }
   ]
 }
@@ -275,7 +275,7 @@
             "phone": "51856335"
           }
         ],
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;"
       },
       {
         "id": 178,
@@ -313,7 +313,7 @@
             "phone": ""
           }
         ],
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=14ac1c864b54d432b959c182a28ebd13"
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;"
       }
     ],
     "actions": null
@@ -368,7 +368,7 @@
       "description": "Prisliste for kommunale idrettsanlegg",
       "owner_name": "Hafrsfjord skole fotballbane",
       "is_image": false,
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=361&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=361&amp;filter_owner_id=27&amp;"
     },
     {
       "id": 360,
@@ -378,7 +378,7 @@
       "description": "Reglement for bruk av kommunale idrettsanlegg",
       "owner_name": "Hafrsfjord skole fotballbane",
       "is_image": false,
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=360&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=&amp;click_history="
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=360&amp;filter_owner_id=27&amp;"
     }
   ]
 }
@@ -469,7 +469,7 @@
         "description": "Hafrsfjord skole grusbane",
         "owner_name": "Hafrsfjord skole fotballbane",
         "is_image": true,
-        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=41&amp;filter_owner_id=27&amp;domain=default&amp;bookingfrontendsession=ksmbnfpqpfpfji794uun4cd994&amp;click_history=ade6d4550f0ca66c486404d0d6d1068e"
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_building.download&amp;id=41&amp;filter_owner_id=27&amp;"
       },
       {
         "id": 95,
@@ -538,7 +538,7 @@
       "buildings": [
         27
       ],
-      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiresource.show&amp;id=37&amp;domain=default&amp;bookingfrontendsession=&amp;click_history=",
+      "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiresource.show&amp;id=37&amp;",
       "building_street": "Madlasandnes",
       "building_city": "4045",
       "building_district": "Madla",
@@ -652,7 +652,7 @@
         "description": "Hall A",
         "owner_name": "Hall A",
         "is_image": true,
-        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_resource.download&amp;id=164&amp;filter_owner_id=89&amp;domain=default&amp;bookingfrontendsession=bjd2fum5r5j9i781714tr0bkk1&amp;click_history=3f5b4edbccf7598624e3bfae7fcdbcf6"
+        "src": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uidocument_resource.download&amp;id=164&amp;filter_owner_id=89&amp;"
       }
     ],
     "actions": null
@@ -804,6 +804,111 @@
 * **Response:**
 ```
 
+
+```
+
+
+
+**Building & construction used by a organization**
+----
+  Returns json data for building and construction used by a organization.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uibuilding.find_buildings_used_by`
+    
+   **Optional:**
+   
+    - `sort=[string]`
+    - `organization_id=[integer]`
+    - `phpgw_return_as=[string]`
+
+
+* **Response:**
+```
+
+{
+  "ResultSet": {
+    "totalResultsAvailable": 2,
+    "totalRecords": 2,
+    "recordsReturned": 2,
+    "pageSize": 10,
+    "startIndex": 0,
+    "sortKey": "name",
+    "sortDir": "asc",
+    "Result": [
+      {
+        "id": 4,
+        "name": "Hundv\u00e5ghallen",
+        "homepage": "www.stavanger.kommune.no",
+        "calendar_text": "",
+        "description": "Hundv\u00e5ghallen<strong> <\/strong>finner du p\u00e5 Hundv\u00e5g.<br>Hallen inneholder to flerbrukshaller, styrkerom, m\u00f8terom og kafeteria.<br>Hall A er bygget i 1988, mens hall B ble bygget i 2008.<br><br><span VarCleaned=\"text-decoration: underline;\"><strong>\u00c5pningstider:<br><\/strong><\/span>Mandag-Fredag kl. 08.00-22.00<br>L\u00f8rdag kl. 10.00-17.00<br>S\u00f8ndag kl. 11.00-18.00",
+        "phone": "51856150",
+        "email": "hundvaghallen@stavanger.kommune.no",
+        "tilsyn_name": "",
+        "tilsyn_phone": "",
+        "tilsyn_email": "",
+        "tilsyn_name2": "",
+        "tilsyn_phone2": "",
+        "tilsyn_email2": "",
+        "deactivate_calendar": 0,
+        "deactivate_application": 0,
+        "deactivate_sendmessage": 1,
+        "extra_kalendar": 0,
+        "location_code": "5040",
+        "activity_id": 2,
+        "part_of_town_id": "4",
+        "street": "Austb\u00f8svingene 54",
+        "zip_code": "4086",
+        "district": "Hundv\u00e5g",
+        "city": "Hundv\u00e5g",
+        "active": 1,
+        "activity_name": "Idrett",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=4"
+      },
+      {
+        "id": 85,
+        "name": "Hundv\u00e5g sv\u00f8mmehall",
+        "homepage": "",
+        "calendar_text": "",
+        "description": "",
+        "phone": "51507610",
+        "email": "hundvag.svommehall.51507610@stavanger.kommune.no",
+        "tilsyn_name": "",
+        "tilsyn_phone": "",
+        "tilsyn_email": "",
+        "tilsyn_name2": "",
+        "tilsyn_phone2": "",
+        "tilsyn_email2": "",
+        "deactivate_calendar": 0,
+        "deactivate_application": 0,
+        "deactivate_sendmessage": 1,
+        "extra_kalendar": 0,
+        "location_code": "5044",
+        "activity_id": null,
+        "part_of_town_id": "4",
+        "street": "Austb\u00f8geilen 35",
+        "zip_code": "4085",
+        "district": "Hundv\u00e5g",
+        "city": "Hundv\u00e5g",
+        "active": 1,
+        "activity_name": "",
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.show&amp;id=85&amp;"
+      }
+    ],
+    "actions": null
+  }
+}
 
 ```
 
