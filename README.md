@@ -5,6 +5,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 - [Search](#search)
 - [Building](#building)
+- [Building filter](#building-filter)
 - [Building users](#building-users)
 - [Building documents](#building-document)
 - [Building document download](#building-document-download)
@@ -129,7 +130,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
    **Optional:**
    
     - `phpgw_return_as=[string]`
-
+    
 
 * **Response:**
 ```
@@ -201,6 +202,104 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
   ]
 }
 ```
+
+
+
+**Building filter**
+----
+  Get a building by id.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uibuilding.show`
+    
+   **Optional:**
+   
+    - `id=[integer]`
+    - `phpgw_return_as=[string]`
+    
+
+* **Response:**
+```
+ {
+  "building": {
+    "id": 43,
+    "name": "Bu\u00f8y skole",
+    "homepage": "http:\/\/www.stavanger.kommune.no",
+    "calendar_text": "",
+    "description": "<br>Bu\u00f8y skole har en gymsal.<br><br><strong>For leie av skolelokaler, <a href=\"\/portico\/redirect.php?go=https%3A%2F%2Faktivby.stavanger.kommune.no%2Fportico%2Fredirect.php%3Fgo%3Dhttp%3A%2F%2Fwww.stavanger.kommune.no%2FDocuments%2FBMU+dokumenter%2FIdrett%2FS%C3%B8knadsskjema+p%C3%A5+kommunale+skolelokaler+2014.pdf\">se eget skjema<\/a>.<\/strong><br><br>Idrettsavdelingen har kun tildeling av skolelokaler i ukedager mellom kl. 17.00 - 22.00. For utl\u00e5n f\u00f8r kl. 17.00 og l\u00e5n i helger, ta kontakt med skolens rektor.",
+    "phone": "51 91 37 70",
+    "email": "buoy.skole@stavanger.kommune.no",
+    "tilsyn_name": "",
+    "tilsyn_phone": "",
+    "tilsyn_email": "",
+    "tilsyn_name2": "",
+    "tilsyn_phone2": "",
+    "tilsyn_email2": "",
+    "deactivate_calendar": 1,
+    "deactivate_application": 1,
+    "deactivate_sendmessage": 1,
+    "extra_kalendar": 0,
+    "location_code": "5039",
+    "activity_id": 97,
+    "part_of_town_id": "4",
+    "street": "Skipsbyggergt 19 A",
+    "zip_code": "4085",
+    "district": "Hundv\u00e5g",
+    "city": "Hundv\u00e5g",
+    "active": 1,
+    "activity_name": "Skole",
+    "permission": {
+      "read": true
+    },
+    "schedule_link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.schedule&amp;id=43&amp;",
+    "extra_link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uibuilding.extraschedule&amp;id=43&amp;",
+    "message_link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uisystem_message.edit&amp; building_id=43&amp;building_name=Bu%C3%B8y+skole&amp;domain=default&amp;",
+    "start": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uisearch.index&amp;type=building&amp;"
+  },
+  "jquery_phpgw_i18n": {
+    "datatable": {
+      "emptyTable": "\"Ingen data i tabell\"",
+      "info": "\"Viser _START_ til _END_ av _TOTAL_ poster\"",
+      "infoEmpty": "\"Viser 0 til 0 av 0 poster\"",
+      "infoFiltered": "\"(filtrert fra _max_ poster)\"",
+      "infoPostFix": "\"\"",
+      "thousands": "\",\"",
+      "lengthMenu": "\"Vis _MENU_ poster\"",
+      "loadingRecords": "\"Laster ned...\"",
+      "processing": "\"Prosesserer...\"",
+      "search": "\"S\\u00f8k\"",
+      "zeroRecords": "\"Ingen poster funnet som passer med s\\u00f8ket\"",
+      "paginate": "{\"first\":\"F\\u00f8rste\",\"last\":\"Siste\",\"next\":\"Neste\",\"previous\":\"Forrige\"}",
+      "aria": "{\"sortAscending\":\": sorter kolonne stigende\",\"sortDescending\":\": sorter kolonne synkende\"}",
+      "select": "{\"rows\":{\"0\":\"\",\"_\":\"%d rader er valgt\"}}"
+    },
+    "lengthmenu": {
+      "_": "[[10,20,30],[10,20,30]]"
+    },
+    "lengthmenu_allrows": {
+      "_": "[-1,\"Alle\"]"
+    },
+    "csv_download": {
+      "_": "{\"show_button\":false,\"title\":\"last ned innholdet i synlig tabell til excel\"}"
+    }
+  },
+  "webserver_url": "\/PorticoEstate"
+}
+```
+
+
+
 
 
 
