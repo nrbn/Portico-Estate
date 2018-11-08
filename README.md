@@ -297,7 +297,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     
    **Optional:**
    
-    - `activity_id	=[integer]`       (filter by activities)
+    - `activity_id=[integer]`       (filter by activities)
     - `facility_id=[integer]`         (filter by facilities)
     - `part_of_town_id=[integer]`     (filter by part of town)    
 
@@ -825,8 +825,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
    **Optional:**
    
     - `sort=[string]`                         (sort by eg. name)
-    - `results[integer]`                      (result limit)
-    - `startIndex[integer]`                   
+    - `results=[integer]`                      (result limit)
+    - `startIndex=[integer]`                   
     - `phpgw_return_as=[string]`
 
 
@@ -950,8 +950,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
    **Optional:**
    
     - `sort=[string]`
-    - `no_images[integer]`                (eg -1 or 1)
-    - `filter_owner_id[integer]`
+    - `no_images=[integer]`                (eg -1 or 1)
+    - `filter_owner_id=[integer]`
     - `phpgw_return_as=[string]`
 
 
@@ -1011,7 +1011,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     
     **Optional:**
 
-    - `filter_owner_id[integer]`
+    - `filter_owner_id=[integer]`
     - `phpgw_return_as=[string]`
 
 
@@ -1048,8 +1048,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     
    **Optional:**
    
-    - `sort[string]`
-    - `filter_owner_id[integer]`  
+    - `sort=[string]`
+    - `filter_owner_id=[integer]`  
     - `phpgw_return_as=[string]`
 
 
@@ -2662,7 +2662,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 
 
-**Application Partial One**
+**Application partial one**
 ----
   Add new application. Application is divided into two parts. This is part 1 of application.
 
@@ -2679,23 +2679,108 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
    **Required:**
    
     - `menuaction=bookingfrontend.uiapplication.add`
-    - `building_id[integer]`
-    - `activity_id[integer]`
-    - `formstage[string] ("partial1")`
-    - `resources[][integer]`    
-    - `from_[][datetime]`
-    - `to_[][datetime]`
-    - `audience[][integer]`
-    - `name[string]`
-    - `organizer[string]`
-    - `homepage[string]`
-    - `description[string]`
-    - `equipment[string]`
-    - `male[id_of_agegroup][integer]`
-    - `female[id_of_agegroup][integer]`
-    - `name[file]`
+    - `building_id=[integer]`
+    - `activity_id=[integer]`
+    - `formstage=[string] (eg partial1)`
+    - `resources[]=[integer]`    
+    - `from_[]=[datetime]`
+    - `to_[]=[datetime]`
+    - `audience[]=[integer]`
+    - `name=[string]`
+    - `organizer=[string]`
+    - `homepage=[string]`
+    - `description=[string]`
+    - `equipment=[string]`
+    - `male[id_of_agegroup]=[integer]`
+    - `female[id_of_agegroup]=[integer]`
+    - `name=[file]`
     
     
 * **Response:**
 
     302 on success
+
+
+
+**Application partial two**
+----
+  This is part two of application.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiapplication.add`
+    - `customer_identifier_type=[string] (eg ssn or organization_number)`
+    - `customer_organization_number=[string]`
+    - `customer_ssn=[string]`
+    - `contact_name=[string]`    
+    - `responsible_street=[string]`
+    - `responsible_zip_code=[string]`
+    - `responsible_city=[string]`
+    - `contact_email=[string]`
+    - `contact_email2=[string]`
+    - `contact_phone=[string]`
+    
+    
+* **Response:**
+
+    302 on success
+
+
+
+
+
+**Application get partial**
+----
+  Get partial data of application.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiapplication.get_partials`
+    
+    
+* **Response:**
+
+    
+```
+
+[
+  {
+    "id": 5779,
+    "building_name": "Stavanger Turnhall",
+    "dates": [
+      {
+        "from_": "2018-11-19 00:30:00",
+        "to_": "2018-11-19 00:45:00",
+        "id": 42995
+      }
+    ],
+    "resources": [
+      {
+        "id": 104,
+        "name": "Sal A"
+      }
+    ]
+  }
+]
+
+```
