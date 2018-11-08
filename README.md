@@ -23,6 +23,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Organization delegate](#organization-delegate)
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
 - [Organization documents](#organization-documents)
+- [Organization group](#organization-group)
 
 **Upcoming events**
 ---- 
@@ -2514,6 +2515,73 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 ```
 
+
+```
+
+**Organization group**
+----
+  Get list of organization's groups.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uigroup.index`
+    - `filter_organization_id[integer]`
+    - `phpgw_return_as=[string]`
+    
+   
+* **Response:**
+
+```
+{
+  "start": 0,
+  "sort": null,
+  "dir": "asc",
+  "recordsTotal": 1,
+  "recordsFiltered": 1,
+  "data": [
+    {
+      "id": 242,
+      "active": 1,
+      "show_in_portal": 1,
+      "organization_id": 9,
+      "shortname": "TH",
+      "description": "test beskrivelse",
+      "name": "test",
+      "activity_id": 2,
+      "activity_name": "Idrett",
+      "organization_name": "Tastavarden h\u00e5ndballklubb",
+      "contacts": [
+        {
+          "name": "",
+          "email": "",
+          "phone": ""
+        },
+        {
+          "name": "",
+          "email": "",
+          "phone": ""
+        }
+      ],
+      "link": "\/portico\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=242&amp;click_history=be8a07a27417c3f0a97421b117432c1f",
+      "primary_contact_name": "",
+      "primary_contact_phone": "",
+      "primary_contact_email": "",
+      "secondary_contact_name": "",
+      "secondary_contact_phone": "",
+      "secondary_contact_email": ""
+    }
+  ]
+}
 
 ```
 
