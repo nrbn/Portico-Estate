@@ -2,7 +2,10 @@
 
 Portico Estate application is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
 
+
 - [Upcoming events](#upcoming-events)
+- [Filter boxes](#filter-boxes)
+- [Autocomplete](#autocomplete)
 - [Search](#search)
 - [Filer search](#filter-search)
 - [Building](#building)
@@ -64,6 +67,116 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
   "header": "Dette skjer i Stavanger"
 }
 ```
+
+
+**Filter boxes**
+---- 
+  Filter boxes data for filter search. 
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uisearch.get_filterboxdata`
+    - `phpgw_return_as=[string]`            (return value type eg. json)
+    
+
+* **Response:**
+```
+[
+  {
+    "text": "Leie lokal til idrett",
+    "rescategories": [
+      {
+        "id": 3,
+        "name": "Basseng"
+      },
+      {
+        "id": 1,
+        "name": "Gymsal"
+      },
+      {
+        "id": 2,
+        "name": "Nygymsal"
+      }
+    ]
+  },
+  {
+    "text": "Leie andre lokaler",
+    "rescategories": [
+      {
+        "id": 1,
+        "name": "Gymsal"
+      },
+      {
+        "id": 2,
+        "name": "Nygymsal"
+      }
+    ]
+  }
+]
+```
+
+
+
+**Autocomplete**
+---- 
+  Autocomplete data for search input. 
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uisearch.autocomplete`
+    - `phpgw_return_as=[string]`            (return value type eg. json)
+    
+
+* **Response:**
+```
+[
+  {
+    "name": "Accenture BIL",
+    "type": "organisasjon",
+    "id": "264",
+    "menuaction": "bookingfrontend.uiorganization.show"
+  },
+  {
+    "name": "Afghansk sosial-kulturell forening",
+    "type": "organisasjon",
+    "id": "345",
+    "menuaction": "bookingfrontend.uiorganization.show"
+  },
+  {
+    "name": "Aftenbladet BIL - innebandy",
+    "type": "organisasjon",
+    "id": "443",
+    "menuaction": "bookingfrontend.uiorganization.show"
+  },
+  {
+    "name": "Aker Well Service",
+    "type": "organisasjon",
+    "id": "295",
+    "menuaction": "bookingfrontend.uiorganization.show"
+  }
+]
+```
+
 
 
 
