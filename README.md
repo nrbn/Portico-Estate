@@ -24,6 +24,10 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
 - [Organization documents](#organization-documents)
 - [Organization group](#organization-group)
+- [Application Partial One](#application-partial-one)
+- [Application Partial Two](#application-partial-two)
+
+
 
 **Upcoming events**
 ---- 
@@ -2585,3 +2589,113 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 ```
 
+
+
+**Organization group**
+----
+  Add new application. Application is divided into two parts. This is part 1 of application.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uigroup.index`
+    - `filter_organization_id[integer]`
+    - `phpgw_return_as=[string]`
+    
+   
+* **Response:**
+
+```
+{
+  "start": 0,
+  "sort": null,
+  "dir": "asc",
+  "recordsTotal": 1,
+  "recordsFiltered": 1,
+  "data": [
+    {
+      "id": 242,
+      "active": 1,
+      "show_in_portal": 1,
+      "organization_id": 9,
+      "shortname": "TH",
+      "description": "test beskrivelse",
+      "name": "test",
+      "activity_id": 2,
+      "activity_name": "Idrett",
+      "organization_name": "Tastavarden h\u00e5ndballklubb",
+      "contacts": [
+        {
+          "name": "",
+          "email": "",
+          "phone": ""
+        },
+        {
+          "name": "",
+          "email": "",
+          "phone": ""
+        }
+      ],
+      "link": "\/portico\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=242&amp;click_history=be8a07a27417c3f0a97421b117432c1f",
+      "primary_contact_name": "",
+      "primary_contact_phone": "",
+      "primary_contact_email": "",
+      "secondary_contact_name": "",
+      "secondary_contact_phone": "",
+      "secondary_contact_email": ""
+    }
+  ]
+}
+
+```
+
+
+
+
+
+**Application Partial One**
+----
+  Add new application. Application is divided into two parts. This is part 1 of application.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uiapplication.add`
+    - `building_id[integer]`
+    - `activity_id[integer]`
+    - `formstage[string] ("partial1")`
+    - `resources[][integer]`    
+    - `from_[][datetime]`
+    - `to_[][datetime]`
+    - `audience[][integer]`
+    - `name[string]`
+    - `organizer[string]`
+    - `homepage[string]`
+    - `description[string]`
+    - `equipment[string]`
+    - `male[id_of_agegroup][integer]`
+    - `female[id_of_agegroup][integer]`
+    - `name[file]`
+    
+    
+* **Response:**
+
+    302 on success
