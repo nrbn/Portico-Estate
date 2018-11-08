@@ -294,12 +294,13 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     - `menuaction=bookingfrontend.uisearch.resquery`
     - `rescategory_id=[integer]`
     - `phpgw_return_as=[string]`      (return value type eg. json)
-    
+
    **Optional:**
    
     - `activity_id=[integer]`       (filter by activities)
     - `facility_id=[integer]`         (filter by facilities)
-    - `part_of_town_id=[integer]`     (filter by part of town)    
+    - `part_of_town_id=[integer]`     (filter by part of town)  
+
 
 * **Response:**
 ```
