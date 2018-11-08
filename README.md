@@ -4,6 +4,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 
 - [Search](#search)
+- [Filer search](#filter-search)
 - [Building](#building)
 - [Building filter](#building-filter)
 - [Building users](#building-users)
@@ -21,7 +22,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 **Search**
 ---- 
-  Search for facilities or resources.
+  Search free text on buildings,resources or organization. 
 
 * **URL**
 
@@ -105,6 +106,338 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 }
 ```
 
+
+
+**Filter search**
+---- 
+  Search through the filter boxes on buildings,resources or organization.
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uisearch.resquery`
+    - `rescategory_id=[integer]`
+    - `phpgw_return_as=[string]`      (return value type eg. json)
+    
+   **Optional:**
+   
+    - `activity_id	=[integer]`       (filter by activities)
+    - `facility_id=[integer]`         (filter by facilities)
+    - `part_of_town_id=[integer]`     (filter by part of town)    
+
+
+* **Response:**
+```
+ 
+
+{
+  "buildings": [
+    {
+      "id": 28,
+      "name": "ISS idrettspark",
+      "part_of_town_id": "5",
+      "street": "Treskeveien 3",
+      "zip_code": "4043",
+      "city": "Hafrsfjord",
+      "part_of_town_name": "Madla",
+      "resources": [
+        {
+          "id": 38,
+          "name": "Gressbane (65 x 105)",
+          "activities_list": [
+            {
+              "id": 89,
+              "name": "Aerobic"
+            },
+            {
+              "id": 3,
+              "name": "Ake-, bob og skeleton"
+            },
+            {
+              "id": 4,
+              "name": "Amerikansk fotball"
+            },
+            {
+              "id": 52,
+              "name": "Andre idretter"
+            },
+            {
+              "id": 6,
+              "name": "Badminton"
+            }
+          ],
+          "facilities_list": [
+            {
+              "id": 1,
+              "name": "Prosjektor"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "Ballbinge (25 x 45)",
+          "activities_list": [
+            {
+              "id": 89,
+              "name": "Aerobic"
+            },
+            {
+              "id": 3,
+              "name": "Ake-, bob og skeleton"
+            },
+            {
+              "id": 4,
+              "name": "Amerikansk fotball"
+            },
+            {
+              "id": 52,
+              "name": "Andre idretter"
+            },
+            {
+              "id": 6,
+              "name": "Badminton"
+            }
+          ],
+          "facilities_list": [
+            {
+              "id": 1,
+              "name": "Prosjektor"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "name": "Friidrettsanlegg",
+          "activities_list": [
+            {
+              "id": 89,
+              "name": "Aerobic"
+            },
+            {
+              "id": 3,
+              "name": "Ake-, bob og skeleton"
+            },
+            {
+              "id": 4,
+              "name": "Amerikansk fotball"
+            },
+            {
+              "id": 52,
+              "name": "Andre idretter"
+            },
+            {
+              "id": 6,
+              "name": "Badminton"
+            }
+          ],
+          "facilities_list": [
+            {
+              "id": 1,
+              "name": "Prosjektor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Kvernevik idrettspark",
+      "part_of_town_id": "5",
+      "street": "Heiloveien",
+      "zip_code": "4049",
+      "city": "Stavanger",
+      "part_of_town_name": "Madla",
+      "resources": [
+        {
+          "id": 39,
+          "name": "Sprintstripe",
+          "activities_list": [
+            {
+              "id": 89,
+              "name": "Aerobic"
+            },
+            {
+              "id": 3,
+              "name": "Ake-, bob og skeleton"
+            },
+            {
+              "id": 4,
+              "name": "Amerikansk fotball"
+            },
+            {
+              "id": 52,
+              "name": "Andre idretter"
+            },
+            {
+              "id": 6,
+              "name": "Badminton"
+            }
+          ],
+          "facilities_list": [
+            {
+              "id": 1,
+              "name": "Prosjektor"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": 89,
+      "name": "Aerobic"
+    },
+    {
+      "id": 3,
+      "name": "Ake-, bob og skeleton"
+    },
+    {
+      "id": 4,
+      "name": "Amerikansk fotball"
+    },
+    {
+      "id": 52,
+      "name": "Andre idretter"
+    },
+    {
+      "id": 6,
+      "name": "Badminton"
+    },
+    {
+      "id": 98,
+      "name": "Barnehage"
+    },
+    {
+      "id": 11,
+      "name": "Basketball"
+    },
+    {
+      "id": 14,
+      "name": "Bedriftsidrett"
+    },
+    {
+      "id": 16,
+      "name": "Biljard"
+    },
+    {
+      "id": 17,
+      "name": "Boksing"
+    },
+    {
+      "id": 18,
+      "name": "Bordtennis"
+    },
+    {
+      "id": 91,
+      "name": "Bowling"
+    },
+    {
+      "id": 23,
+      "name": "Bryting"
+    },
+    {
+      "id": 49,
+      "name": "Bueskyting"
+    },
+    {
+      "id": 5,
+      "name": "Cheerleading"
+    },
+    {
+      "id": 84,
+      "name": "Cricket"
+    },
+    {
+      "id": 86,
+      "name": "Curling"
+    },
+    {
+      "id": 46,
+      "name": "Dansing"
+    },
+    {
+      "id": 93,
+      "name": "Dykking"
+    },
+    {
+      "id": 50,
+      "name": "Fekting"
+    },
+    {
+      "id": 29,
+      "name": "Fotball"
+    },
+    {
+      "id": 28,
+      "name": "H\u00e5ndball"
+    },
+    {
+      "id": 73,
+      "name": "M\u00f8terom"
+    },
+    {
+      "id": 94,
+      "name": "Snowboard"
+    },
+    {
+      "id": 82,
+      "name": "Sykling"
+    },
+    {
+      "id": 42,
+      "name": "Tennis"
+    },
+    {
+      "id": 30,
+      "name": "Volleyball"
+    }
+  ],
+  "facilities": [
+    {
+      "id": 2,
+      "name": "M\u00e5l"
+    },
+    {
+      "id": 1,
+      "name": "Prosjektor"
+    }
+  ],
+  "partoftowns": [
+    {
+      "id": 1,
+      "name": "Eiganes\/V\u00e5land"
+    },
+    {
+      "id": 2,
+      "name": "Hillev\u00e5g\n"
+    },
+    {
+      "id": 3,
+      "name": "Hinna"
+    },
+    {
+      "id": 5,
+      "name": "Madla"
+    },
+    {
+      "id": 7,
+      "name": "Tasta"
+    }
+  ]
+}
+
+
+```
 
 
 
