@@ -1402,7 +1402,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 ```
 
 
-**Resource schedule(2)**
+**Resource schedule 2**
 ----
   Get booked events of a resource
 
