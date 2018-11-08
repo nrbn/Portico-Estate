@@ -2,7 +2,7 @@
 
 Portico Estate application is based on phpGroupWare. phpGroupWare (formerly known as webdistro) is a multi-user groupware suite written in PHP. Its provides a Web-based calendar, todo-list, addressbook, email, news headlines, and a file manager. The calendar supports repeating events.
 
-
+- [Upcoming events](#upcoming-events)
 - [Search](#search)
 - [Filer search](#filter-search)
 - [Building](#building)
@@ -19,6 +19,54 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Organization delegate](#organization-delegate)
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
 - [Organization documents](#organization-documents)
+
+**Upcoming events**
+---- 
+  Get upcoming events. 
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uisearch.events`
+    - `phpgw_return_as=[string]`            (return value type eg. json)
+    
+
+* **Response:**
+```
+{
+  "total_records": 1,
+  "results": [
+    {
+      "id": 12020,
+      "name": "Kommende arrangement",
+      "organizer": "Navn",
+      "homepage": "",
+      "building_name": "Stavanger idrettshall",
+      "from_": "2019-02-11 13:30:00",
+      "to_": "2019-03-18 13:30:00",
+      "datetime_day": "11-18",
+      "datetime_month": "februar-mars",
+      "datetime_time": "13:30-13:30"
+    }
+  ],
+  "start": 0,
+  "sort": "from_",
+  "dir": "asc",
+  "header": "Dette skjer i Stavanger"
+}
+```
+
+
+
 
 **Search**
 ---- 
