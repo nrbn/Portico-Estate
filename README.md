@@ -24,9 +24,9 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
 - [Organization documents](#organization-documents)
 - [Organization group](#organization-group)
-- [Application Partial One](#application-partial-one)
-- [Application Partial Two](#application-partial-two)
-
+- [Application partial one](#application-partial-one)
+- [Application partial two](#application-partial-two)
+- [Application get partial](#application-get-partial)
 
 
 **Upcoming events**
