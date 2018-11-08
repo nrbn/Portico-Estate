@@ -18,6 +18,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Resource images](#resource-images)
 - [Resource images(2)](#resource-images-2)
 - [Resource schedule](#resource-schedule)
+- [Resource schedule](#resource-schedule-2)
 - [Organization](#organization)
 - [Organization delegate](#organization-delegate)
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
@@ -1399,6 +1400,837 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
   }
 }
 ```
+
+
+**Resource schedule**
+----
+  Get booked events of a resource
+
+* **URL**
+
+  /bookingfrontend/?
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+   
+    - `menuaction=bookingfrontend.uibooking.resource_schedule`
+    - `date=[yyyy-mm-dd]`
+    - `resource_id=[integer]`
+    - `phpgw_return_as=[string]`
+    
+* **Response:**
+```
+{
+  "ResultSet": {
+    "totalResultsAvailable": 9,
+    "Result": [
+      {
+        "time": "00:00-07:45",
+        "_from": "00:00",
+        "_to": "07:45",
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "07:45-08:30",
+        "_from": "07:45",
+        "_to": "08:30",
+        "Mon": {
+          "id": 265703,
+          "id_string": "265703",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "08:30",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265703&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Tue": {
+          "id": 265707,
+          "id_string": "265707",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "08:30",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-29",
+          "wday": "Tue",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265707&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Wed": {
+          "id": 265710,
+          "id_string": "265710",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "09:15",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-05-30",
+          "wday": "Wed",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265710&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "08:30-09:15",
+        "_from": "08:30",
+        "_to": "09:15",
+        "Wed": {
+          "id": 265710,
+          "id_string": "265710",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "09:15",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-05-30",
+          "wday": "Wed",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265710&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Mon": {
+          "id": 265704,
+          "id_string": "265704",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265704&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Tue": {
+          "id": 265708,
+          "id_string": "265708",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-29",
+          "wday": "Tue",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265708&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Fri": {
+          "id": 265713,
+          "id_string": "265713",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-06-01",
+          "wday": "Fri",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265713&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "09:15-09:25",
+        "_from": "09:15",
+        "_to": "09:25",
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Mon": {
+          "id": 265704,
+          "id_string": "265704",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265704&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Tue": {
+          "id": 265708,
+          "id_string": "265708",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-29",
+          "wday": "Tue",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265708&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Fri": {
+          "id": 265713,
+          "id_string": "265713",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-06-01",
+          "wday": "Fri",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265713&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "09:25-11:05",
+        "_from": "09:25",
+        "_to": "11:05",
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Mon": {
+          "id": 265704,
+          "id_string": "265704",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265704&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Tue": {
+          "id": 265708,
+          "id_string": "265708",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-05-29",
+          "wday": "Tue",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265708&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Fri": {
+          "id": 265713,
+          "id_string": "265713",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 220,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "08:30",
+          "to_": "11:05",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Hetland vgs",
+          "organization_shortname": "Hetland vgs",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Hetland vgs",
+          "shortname": "Hetland vgs",
+          "type": "allocation",
+          "date": "2018-06-01",
+          "wday": "Fri",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265713&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Wed": {
+          "id": 265711,
+          "id_string": "265711",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "09:25",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-30",
+          "wday": "Wed",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "11:05-11:40",
+        "_from": "11:05",
+        "_to": "11:40",
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Wed": {
+          "id": 265711,
+          "id_string": "265711",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "09:25",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-30",
+          "wday": "Wed",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "11:40-15:00",
+        "_from": "11:40",
+        "_to": "15:00",
+        "Thu": {
+          "id": 265712,
+          "id_string": "265712",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "07:45",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-31",
+          "wday": "Thu",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Wed": {
+          "id": 265711,
+          "id_string": "265711",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "09:25",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-30",
+          "wday": "Wed",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Mon": {
+          "id": 265705,
+          "id_string": "265705",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "11:40",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265705&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Tue": {
+          "id": 265709,
+          "id_string": "265709",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "11:40",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-05-29",
+          "wday": "Tue",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265709&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Fri": {
+          "id": 265714,
+          "id_string": "265714",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 221,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "11:40",
+          "to_": "15:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Kristianlyst Skole",
+          "organization_shortname": "Kr. Lyst",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Kristianlyst Skole",
+          "shortname": "Kr. Lyst",
+          "type": "allocation",
+          "date": "2018-06-01",
+          "wday": "Fri",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265714&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "resource": "Idrettshall",
+        "resource_id": 80,
+        "time": "15:00-16:00",
+        "_from": "15:00",
+        "_to": "16:00",
+        "Mon": {
+          "id": 265706,
+          "id_string": "265706",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 515,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "15:00",
+          "to_": "16:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Lærertrim",
+          "organization_shortname": "Lærertrim",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Lærertrim",
+          "shortname": "Lærertrim",
+          "type": "allocation",
+          "date": "2018-05-28",
+          "wday": "Mon",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265706&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "Fri": {
+          "id": 265715,
+          "id_string": "265715",
+          "active": 1,
+          "application_id": null,
+          "organization_id": 178,
+          "building_name": "Hetlandshallen",
+          "season_id": 394,
+          "from_": "15:00",
+          "to_": "16:00",
+          "cost": 0,
+          "completed": 1,
+          "organization_name": "Renhold",
+          "organization_shortname": "Renhold",
+          "building_id": "3",
+          "season_name": "Inne 2017/2018 dag",
+          "resources": [
+            80
+          ],
+          "costs": "",
+          "name": "Renhold",
+          "shortname": "Renhold",
+          "type": "allocation",
+          "date": "2018-06-01",
+          "wday": "Fri",
+          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265715&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+        },
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      },
+      {
+        "time": "16:00-00:00",
+        "_from": "16:00",
+        "_to": "00:00",
+        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
+      }
+    ]
+  }
+}
+```
+
 
 
 
