@@ -301,11 +301,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     - `facility_id=[integer]`         (filter by facilities)
     - `part_of_town_id=[integer]`     (filter by part of town)    
 
-
 * **Response:**
 ```
- 
-
 {
   "buildings": [
     {
@@ -602,8 +599,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     }
   ]
 }
-
-
 ```
 
 
