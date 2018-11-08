@@ -18,7 +18,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Resource images](#resource-images)
 - [Resource images(2)](#resource-images-2)
 - [Resource schedule](#resource-schedule)
-- [Resource schedule](#resource-schedule-2)
+- [Resource schedule(2)](#resource-schedule-2)
 - [Organization](#organization)
 - [Organization delegate](#organization-delegate)
 - [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
@@ -1402,7 +1402,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 ```
 
 
-**Resource schedule**
+**Resource schedule(2)**
 ----
   Get booked events of a resource
 
