@@ -29,7 +29,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Application partial two](#application-partial-two)
 - [Application get partial](#application-get-partial)
 
-
+ 
 **Upcoming events**
 ---- 
   Get upcoming events. 
