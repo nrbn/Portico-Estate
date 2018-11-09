@@ -50,7 +50,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     - `phpgw_return_as=[string]`            (return value type eg. json)
     
 
-
 * **Response:**
 ```
 {
@@ -75,6 +74,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
   "header": "Dette skjer i Stavanger"
 }
 ```
+
 
 
 **Filter boxes**
