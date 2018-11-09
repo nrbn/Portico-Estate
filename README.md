@@ -21,7 +21,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Resource schedule(2)](#resource-schedule-2)
 - [Organization](#organization)
 - [Organization delegate](#organization-delegate)
-- [Building & construction used by a organization](#building-&-construction-used-by-a-organization)
+- [Building and construction used by a organization](#building-and-construction-used-by-a-organization)
 - [Organization documents](#organization-documents)
 - [Organization group](#organization-group)
 - [Regulation documents](#regulation-documents)
@@ -2394,7 +2394,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 ```
 
 
-**Building & construction used by a organization**
+**Building and construction used by a organization**
 ----
   Get list of building and construction used by a organization.
 
