@@ -1492,23 +1492,23 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
       "organization_name": "Stavanger bueskyttere",
       "contacts": [
         {
-          "name": "Helge salomonsen",
-          "email": "Helge.salomonsen@lyse.net",
-          "phone": "93420066"
+          "name": "Ola Nordmann",
+          "email": "ola@example.com",
+          "phone": "12345678"
         },
         {
-          "name": "Ole-Kristian olufsen",
-          "email": "Okolufsen@gmail.com",
-          "phone": "92802745"
+          "name": "Kari Nordmann",
+          "email": "kari@example.com",
+          "phone": "87654321"
         }
       ],
       "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=154&amp",
-      "primary_contact_name": "Helge salomonsen",
-      "primary_contact_phone": "93420066",
-      "primary_contact_email": "Helge.salomonsen@lyse.net",
-      "secondary_contact_name": "Ole-Kristian olufsen",
-      "secondary_contact_phone": "92802745",
-      "secondary_contact_email": "Okolufsen@gmail.com"
+      "primary_contact_name": "Ola Nordmann",
+      "primary_contact_phone": "12345678",
+      "primary_contact_email": "ola@example.com",
+      "secondary_contact_name": "Kari Nordmann",
+      "secondary_contact_phone": "87654321",
+      "secondary_contact_email": "kari@example.com"
     },
     {
       "id": 153,
@@ -1523,23 +1523,23 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
       "organization_name": "Stavanger bueskyttere",
       "contacts": [
         {
-          "name": "Ole-Kristian olufsen",
-          "email": "Okolufsen@gmail.com",
-          "phone": "92802745"
+          "name": "Ola Nordmann",
+          "email": "ola@example.com",
+          "phone": "12345678"
         },
         {
-          "name": "Ken Henry Tesaker",
-          "email": "Kenht@broadpark.no",
-          "phone": "90239221"
+          "name": "Kari Nordmann",
+          "email": "kari@example.com",
+          "phone": "87654321"
         }
       ],
       "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=153&amp",
-      "primary_contact_name": "Ole-Kristian olufsen",
-      "primary_contact_phone": "92802745",
-      "primary_contact_email": "Okolufsen@gmail.com",
-      "secondary_contact_name": "Ken Henry Tesaker",
-      "secondary_contact_phone": "90239221",
-      "secondary_contact_email": "Kenht@broadpark.no"
+      "primary_contact_name": "Ola Nordmann",
+      "primary_contact_phone": "12345678",
+      "primary_contact_email": "ola@example.com",
+      "secondary_contact_name": "Kari Nordmann",
+      "secondary_contact_phone": "87654321",
+      "secondary_contact_email": "kari@example.com"
     }
   ]
 }
@@ -2017,6 +2017,10 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
    
     - `menuaction=bookingfrontend.uiapplication.add`
     - `building_id=[integer]`
+   
+    
+   **POST-data:**
+    
     - `activity_id=[integer]`
     - `formstage=[string] (eg partial1)`
     - `resources[]=[integer]`    
@@ -2055,7 +2059,10 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
    **Required:**
    
-    - `menuaction=bookingfrontend.uiapplication.add`
+    - `menuaction=bookingfrontend.uiapplication.add`    
+    
+   
+   **POST-data:**
     - `customer_identifier_type=[string] (eg ssn or organization_number)`
     - `customer_organization_number=[string]`
     - `customer_ssn=[string]`
@@ -2066,8 +2073,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     - `contact_email=[string]`
     - `contact_email2=[string]`
     - `contact_phone=[string]`
-    
-    
+  
 * **Response:**
 
     302 on success
