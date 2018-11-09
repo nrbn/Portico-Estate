@@ -50,9 +50,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     - `phpgw_return_as=[string]`            (return value type eg. json)
     
 
-*  **Response**
 
-   
+* **Response:**
 ```
 {
   "total_records": 1,
