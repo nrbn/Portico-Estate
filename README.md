@@ -2688,41 +2688,28 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 ```
 {
   "start": 0,
-  "sort": null,
+  "sort": "name",
   "dir": "asc",
-  "recordsTotal": 1,
-  "recordsFiltered": 1,
+  "recordsTotal": 3,
+  "recordsFiltered": 3,
   "data": [
     {
-      "id": 242,
-      "active": 1,
-      "show_in_portal": 1,
-      "organization_id": 9,
-      "shortname": "TH",
-      "description": "test beskrivelse",
-      "name": "test",
-      "activity_id": 2,
-      "activity_name": "Idrett",
-      "organization_name": "Tastavarden h\u00e5ndballklubb",
-      "contacts": [
-        {
-          "name": "",
-          "email": "",
-          "phone": ""
-        },
-        {
-          "name": "",
-          "email": "",
-          "phone": ""
-        }
-      ],
-      "link": "\/portico\/bookingfrontend\/?menuaction=bookingfrontend.uigroup.show&amp;id=242&amp;click_history=be8a07a27417c3f0a97421b117432c1f",
-      "primary_contact_name": "",
-      "primary_contact_phone": "",
-      "primary_contact_email": "",
-      "secondary_contact_name": "",
-      "secondary_contact_phone": "",
-      "secondary_contact_email": ""
+      "id": "building::323",
+      "type": "building",
+      "name": "Prisliste for kommunale idrettsanlegg",
+      "owner_id": 10,
+      "category": "price_list",
+      "description": "Prisliste for kommunale idrettsanlegg",
+      "link": "\/portico\/bookingfrontend\/?menuaction=booking.uidocument_view.download&amp;id=building%3A%3A323&amp;"
+    },
+    {
+      "id": "building::322",
+      "type": "building",
+      "name": "Reglement for bruk av kommunale idrettsanlegg",
+      "owner_id": 10,
+      "category": "regulation",
+      "description": "Reglement for bruk av kommunale idrettsanlegg",
+      "link": "\/portico\/bookingfrontend\/?menuaction=booking.uidocument_view.download&amp;id=building%3A%3A322&amp;"
     }
   ]
 }
