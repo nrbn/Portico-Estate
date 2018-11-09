@@ -169,18 +169,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     "type": "organisasjon",
     "id": "345",
     "menuaction": "bookingfrontend.uiorganization.show"
-  },
-  {
-    "name": "Aftenbladet BIL - innebandy",
-    "type": "organisasjon",
-    "id": "443",
-    "menuaction": "bookingfrontend.uiorganization.show"
-  },
-  {
-    "name": "Aker Well Service",
-    "type": "organisasjon",
-    "id": "295",
-    "menuaction": "bookingfrontend.uiorganization.show"
   }
 ]
 ```
@@ -299,9 +287,9 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
    **Optional:**
    
-    - `activity_id=[integer]`       (filter by activities)
-    - `facility_id=[integer]`         (filter by facilities)
-    - `part_of_town_id=[integer]`     (filter by part of town)  
+    - `activity_id=[list of integers]`       (filter by activities)
+    - `facility_id=[list of integers]`         (filter by facilities)
+    - `part_of_town_id=[list of integers]`     (filter by part of town)  
 
 
 * **Response:**
@@ -328,18 +316,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
             {
               "id": 3,
               "name": "Ake-, bob og skeleton"
-            },
-            {
-              "id": 4,
-              "name": "Amerikansk fotball"
-            },
-            {
-              "id": 52,
-              "name": "Andre idretter"
-            },
-            {
-              "id": 6,
-              "name": "Badminton"
             }
           ],
           "facilities_list": [
@@ -360,18 +336,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
             {
               "id": 3,
               "name": "Ake-, bob og skeleton"
-            },
-            {
-              "id": 4,
-              "name": "Amerikansk fotball"
-            },
-            {
-              "id": 52,
-              "name": "Andre idretter"
-            },
-            {
-              "id": 6,
-              "name": "Badminton"
             }
           ],
           "facilities_list": [
@@ -392,18 +356,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
             {
               "id": 3,
               "name": "Ake-, bob og skeleton"
-            },
-            {
-              "id": 4,
-              "name": "Amerikansk fotball"
-            },
-            {
-              "id": 52,
-              "name": "Andre idretter"
-            },
-            {
-              "id": 6,
-              "name": "Badminton"
             }
           ],
           "facilities_list": [
@@ -435,18 +387,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
             {
               "id": 3,
               "name": "Ake-, bob og skeleton"
-            },
-            {
-              "id": 4,
-              "name": "Amerikansk fotball"
-            },
-            {
-              "id": 52,
-              "name": "Andre idretter"
-            },
-            {
-              "id": 6,
-              "name": "Badminton"
             }
           ],
           "facilities_list": [
@@ -523,50 +463,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     {
       "id": 84,
       "name": "Cricket"
-    },
-    {
-      "id": 86,
-      "name": "Curling"
-    },
-    {
-      "id": 46,
-      "name": "Dansing"
-    },
-    {
-      "id": 93,
-      "name": "Dykking"
-    },
-    {
-      "id": 50,
-      "name": "Fekting"
-    },
-    {
-      "id": 29,
-      "name": "Fotball"
-    },
-    {
-      "id": 28,
-      "name": "H\u00e5ndball"
-    },
-    {
-      "id": 73,
-      "name": "M\u00f8terom"
-    },
-    {
-      "id": 94,
-      "name": "Snowboard"
-    },
-    {
-      "id": 82,
-      "name": "Sykling"
-    },
-    {
-      "id": 42,
-      "name": "Tennis"
-    },
-    {
-      "id": 30,
-      "name": "Volleyball"
     }
   ],
   "facilities": [
@@ -591,14 +487,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     {
       "id": 3,
       "name": "Hinna"
-    },
-    {
-      "id": 5,
-      "name": "Madla"
-    },
-    {
-      "id": 7,
-      "name": "Tasta"
     }
   ]
 }
@@ -847,8 +735,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
         "name": "Austb\u00f8 Skole",
         "shortname": "Austb\u00f8",
         "homepage": "",
-        "phone": "51856332",
-        "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
+        "phone": "12345678",
+        "email": "ola@example.com",
         "description": "<br>Austb\u00f8 Skole",
         "street": "Austb\u00f8svingene 50",
         "zip_code": "4085",
@@ -865,16 +753,16 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
         "activity_name": "Skole",
         "contacts": [
           {
-            "name": "\u00c5smund Glende Jakobsen",
+            "name": "Ola Nordmann",
             "ssn": "",
-            "email": "aasmund.glende.jakobsen@stavanger.kommune.no",
-            "phone": "51856332"
+            "email": "ola@example.com",
+            "phone": "12345678"
           },
           {
-            "name": "Eva Walde Lund",
+            "name": "Kari Nordmann",
             "ssn": "",
-            "email": "eva.walde.lund@stavanger.kommune.no",
-            "phone": "51856335"
+            "email": "kari@example.com",
+            "phone": "87654321"
           }
         ],
         "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=183&amp;domain=default&amp;"
@@ -915,7 +803,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
             "phone": ""
           }
         ],
-        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&amp;domain=default&amp;"
+        "link": "\/PorticoEstate\/bookingfrontend\/?menuaction=bookingfrontend.uiorganization.show&amp;id=178&domain=default"
       }
     ],
     "actions": null
@@ -1546,149 +1434,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
       {
         "resource": "Idrettshall",
         "resource_id": 80,
-        "time": "08:30-09:15",
-        "_from": "08:30",
-        "_to": "09:15",
-        "Wed": {
-          "id": 265710,
-          "id_string": "265710",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 178,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "07:45",
-          "to_": "09:15",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Renhold",
-          "organization_shortname": "Renhold",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Renhold",
-          "shortname": "Renhold",
-          "type": "allocation",
-          "date": "2018-05-30",
-          "wday": "Wed",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265710&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Thu": {
-          "id": 265712,
-          "id_string": "265712",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "07:45",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-31",
-          "wday": "Thu",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Mon": {
-          "id": 265704,
-          "id_string": "265704",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 220,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "08:30",
-          "to_": "11:05",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Hetland vgs",
-          "organization_shortname": "Hetland vgs",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Hetland vgs",
-          "shortname": "Hetland vgs",
-          "type": "allocation",
-          "date": "2018-05-28",
-          "wday": "Mon",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265704&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Tue": {
-          "id": 265708,
-          "id_string": "265708",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 220,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "08:30",
-          "to_": "11:05",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Hetland vgs",
-          "organization_shortname": "Hetland vgs",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Hetland vgs",
-          "shortname": "Hetland vgs",
-          "type": "allocation",
-          "date": "2018-05-29",
-          "wday": "Tue",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265708&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Fri": {
-          "id": 265713,
-          "id_string": "265713",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 220,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "08:30",
-          "to_": "11:05",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Hetland vgs",
-          "organization_shortname": "Hetland vgs",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Hetland vgs",
-          "shortname": "Hetland vgs",
-          "type": "allocation",
-          "date": "2018-06-01",
-          "wday": "Fri",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265713&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-      },
-      {
-        "resource": "Idrettshall",
-        "resource_id": 80,
         "time": "09:15-09:25",
         "_from": "09:15",
         "_to": "09:25",
@@ -1942,273 +1687,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
           "date": "2018-05-30",
           "wday": "Wed",
           "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-      },
-      {
-        "resource": "Idrettshall",
-        "resource_id": 80,
-        "time": "11:05-11:40",
-        "_from": "11:05",
-        "_to": "11:40",
-        "Thu": {
-          "id": 265712,
-          "id_string": "265712",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "07:45",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-31",
-          "wday": "Thu",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Wed": {
-          "id": 265711,
-          "id_string": "265711",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "09:25",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-30",
-          "wday": "Wed",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-      },
-      {
-        "resource": "Idrettshall",
-        "resource_id": 80,
-        "time": "11:40-15:00",
-        "_from": "11:40",
-        "_to": "15:00",
-        "Thu": {
-          "id": 265712,
-          "id_string": "265712",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "07:45",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-31",
-          "wday": "Thu",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265712&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Wed": {
-          "id": 265711,
-          "id_string": "265711",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "09:25",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-30",
-          "wday": "Wed",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265711&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Mon": {
-          "id": 265705,
-          "id_string": "265705",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "11:40",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-28",
-          "wday": "Mon",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265705&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Tue": {
-          "id": 265709,
-          "id_string": "265709",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "11:40",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-05-29",
-          "wday": "Tue",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265709&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Fri": {
-          "id": 265714,
-          "id_string": "265714",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 221,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "11:40",
-          "to_": "15:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Kristianlyst Skole",
-          "organization_shortname": "Kr. Lyst",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Kristianlyst Skole",
-          "shortname": "Kr. Lyst",
-          "type": "allocation",
-          "date": "2018-06-01",
-          "wday": "Fri",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265714&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-      },
-      {
-        "resource": "Idrettshall",
-        "resource_id": 80,
-        "time": "15:00-16:00",
-        "_from": "15:00",
-        "_to": "16:00",
-        "Mon": {
-          "id": 265706,
-          "id_string": "265706",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 515,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "15:00",
-          "to_": "16:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Lærertrim",
-          "organization_shortname": "Lærertrim",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Lærertrim",
-          "shortname": "Lærertrim",
-          "type": "allocation",
-          "date": "2018-05-28",
-          "wday": "Mon",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265706&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
-        },
-        "Fri": {
-          "id": 265715,
-          "id_string": "265715",
-          "active": 1,
-          "application_id": null,
-          "organization_id": 178,
-          "building_name": "Hetlandshallen",
-          "season_id": 394,
-          "from_": "15:00",
-          "to_": "16:00",
-          "cost": 0,
-          "completed": 1,
-          "organization_name": "Renhold",
-          "organization_shortname": "Renhold",
-          "building_id": "3",
-          "season_name": "Inne 2017/2018 dag",
-          "resources": [
-            80
-          ],
-          "costs": "",
-          "name": "Renhold",
-          "shortname": "Renhold",
-          "type": "allocation",
-          "date": "2018-06-01",
-          "wday": "Fri",
-          "info_url": "/portico/bookingfrontend/?menuaction=bookingfrontend.uiallocation.info&amp;id=265715&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
         },
         "link": "/portico/bookingfrontend/?menuaction=bookingfrontend.uibooking.show&amp;click_history=58c263c1621cc667d5c20515bfea7f19"
       },
