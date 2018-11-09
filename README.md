@@ -2364,7 +2364,32 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 * **Response:**
 
 ```
-
+{ 
+  "start": 0,
+  "sort": "name",
+  "dir": "asc",
+  "recordsTotal": 1,
+  "recordsFiltered": 1,
+  "data": [
+    {
+      "id": 3,
+      "active": "Ja",
+      "organization_id": 9,
+      "name": "Delegatnavn",
+      "email": "test@test.no",
+      "ssn": "{SHA1}ZDI3ZDBjZWUzZjllZGExMDUzNGQ0ZjFiYWI3M2I2NzM4Zjc1MWFhMA==",
+      "phone": "222222231",
+      "organization_name": "Tastavarden h\u00e5ndballklubb",
+      "link": "\/portico\/bookingfrontend\/?menuaction=bookingfrontend.uidelegate.show&amp;id=3&amp;click_history=ba8d95cb7e868264a0a7d8936e542e00"
+    }
+  ],
+  "Actions": {
+    "add": {
+      "text": "Legg til gruppe",
+      "href": "\/portico\/bookingfrontend\/?menuaction=bookingfrontend.uidelegate.edit&amp;filter_organization_id=9&amp;click_history=ba8d95cb7e868264a0a7d8936e542e00"
+    }
+  }
+}
 
 ```
 
