@@ -7,7 +7,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Filter boxes](#filter-boxes)
 - [Autocomplete](#autocomplete)
 - [Search](#search)
-- [Filer search](#filter-search)
+- [Filter search](#filter-search)
 - [Building](#building)
 - [Building filter](#building-filter)
 - [Building users](#building-users)
