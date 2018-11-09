@@ -1009,17 +1009,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     **Optional:**
 
     - `filter_owner_id=[integer]`
-    - `phpgw_return_as=[string]`
-
-
-* **Response:**
-
-```
-{
- 
-}
-```
-
 
 
 
