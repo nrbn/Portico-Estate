@@ -15,8 +15,8 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 - [Building document download](#building-document-download)
 - [Building images](#building-images)
 - [Resource](#resource)
+- [Resource documents](#resource-documents)
 - [Resource images](#resource-images)
-- [Resource images(2)](#resource-images-2)
 - [Resource schedule](#resource-schedule)
 - [Resource schedule(2)](#resource-schedule-2)
 - [Organization](#organization)
@@ -1142,9 +1142,9 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 
 
-**Resource images**
+**Resource documents**
 ----
-  Get resource images.
+  Get resource documents.
 
 * **URL**
 
@@ -1196,7 +1196,7 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 
 
 
-**Resource images 2**
+**Resource images**
 ----
   Get resource images alternative.
 
