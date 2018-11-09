@@ -2532,6 +2532,54 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
 ```
 
 
+{
+  "start": 0,
+  "sort": "name",
+  "dir": "asc",
+  "recordsTotal": 5,
+  "recordsFiltered": 5,
+  "data": [
+    {
+      "id": 4,
+      "name": "pexels-photo.jpg",
+      "owner_id": 9,
+      "category": "Bilde",
+      "description": "",
+      "owner_name": "Tastavarden h\u00e5ndballklubb",
+      "is_image": true,
+      "link": "\/portico\/index.php?menuaction=booking.uidocument_organization.download&amp;id=4&amp;filter_owner_id=9&amp;",
+      "option_edit": "\/portico\/index.php?menuaction=booking.uidocument_organization.edit&amp;id=4&amp;filter_owner_id=9&amp;",
+      "option_delete": "\/portico\/index.php?menuaction=booking.uidocument_organization.delete&amp;id=4&amp;filter_owner_id=9&"
+    },
+    {
+      "id": 5,
+      "name": "pexels-photo.jpg",
+      "owner_id": 9,
+      "category": "Bilde",
+      "description": "",
+      "owner_name": "Tastavarden h\u00e5ndballklubb",
+      "is_image": true,
+      "link": "\/portico\/index.php?menuaction=booking.uidocument_organization.download&amp;id=5&amp;filter_owner_id=9&amp;",
+      "option_edit": "\/portico\/index.php?menuaction=booking.uidocument_organization.edit&amp;id=5&amp;filter_owner_id=9&amp;",
+      "option_delete": "\/portico\/index.php?menuaction=booking.uidocument_organization.delete&amp;id=5&amp;filter_owner_id=9&"
+    },
+    {
+      "id": 8,
+      "name": "Postnummerregister.csv",
+      "owner_id": 9,
+      "category": "HMS dokument",
+      "description": "",
+      "owner_name": "Tastavarden h\u00e5ndballklubb",
+      "is_image": false,
+      "link": "\/portico\/index.php?menuaction=booking.uidocument_organization.download&amp;id=8&amp;filter_owner_id=9&amp;",
+      "option_edit": "\/portico\/index.php?menuaction=booking.uidocument_organization.edit&amp;id=8&amp;filter_owner_id=9&amp;",
+      "option_delete": "\/portico\/index.php?menuaction=booking.uidocument_organization.delete&amp;id=8&amp;filter_owner_id=9&"
+    }
+  ]
+}
+
+
+
 ```
 
 **Organization group**
