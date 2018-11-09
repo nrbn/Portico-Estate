@@ -415,54 +415,6 @@ Portico Estate application is based on phpGroupWare. phpGroupWare (formerly know
     {
       "id": 52,
       "name": "Andre idretter"
-    },
-    {
-      "id": 6,
-      "name": "Badminton"
-    },
-    {
-      "id": 98,
-      "name": "Barnehage"
-    },
-    {
-      "id": 11,
-      "name": "Basketball"
-    },
-    {
-      "id": 14,
-      "name": "Bedriftsidrett"
-    },
-    {
-      "id": 16,
-      "name": "Biljard"
-    },
-    {
-      "id": 17,
-      "name": "Boksing"
-    },
-    {
-      "id": 18,
-      "name": "Bordtennis"
-    },
-    {
-      "id": 91,
-      "name": "Bowling"
-    },
-    {
-      "id": 23,
-      "name": "Bryting"
-    },
-    {
-      "id": 49,
-      "name": "Bueskyting"
-    },
-    {
-      "id": 5,
-      "name": "Cheerleading"
-    },
-    {
-      "id": 84,
-      "name": "Cricket"
     }
   ],
   "facilities": [
